@@ -1,0 +1,44 @@
+{
+  "name": "react-redux-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.17",
+    "@storybook/addon-links": "^3.2.17",
+    "@storybook/react": "^3.2.17",
+    "@types/jest": "^21.1.8",
+    "@types/react": "^16.0.31",
+    "@types/react-dom": "^16.0.3",
+    "autoprefixer": "^7.2.3",
+    "awesome-typescript-loader": "^3.4.1",
+    "copy-webpack-plugin": "^4.3.0",
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^22.0.1",
+    "postcss-loader": "^2.0.9",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.19.1",
+    "ts-jest": "^22.0.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}

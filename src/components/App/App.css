@@ -1,0 +1,12 @@
+
+.App{
+    height: 100%;
+    width: 100%;
+    background-color: #DB7E82;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#0D152B;
+}
