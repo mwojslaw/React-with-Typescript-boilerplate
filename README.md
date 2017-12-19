@@ -1,1 +1,5 @@
-"# React-with-Typescript-boilerplate" 
+React,
+Redux,
+Typescript,
+Jest,
+Storybook
