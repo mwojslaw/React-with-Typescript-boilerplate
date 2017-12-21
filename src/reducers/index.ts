@@ -1,6 +1,6 @@
-import { Action } from 'redux';
+import { Action } from "redux";
 
-export const helloMessage = (state = 'Hello, You !', action: Action) => {
+export const helloMessage = (state = "Hello, You !", action: Action) => {
     switch(action.type){
         default:
             return state;
@@ -9,24 +9,24 @@ export const helloMessage = (state = 'Hello, You !', action: Action) => {
 
 const _usedTechnologies: {href: string, name: string}[] = [
     {
-        href: '',
-        name: 'react'
+        href: "",
+        name: "react"
     },
     {
-        href: '',
-        name: 'redux'
+        href: "",
+        name: "redux"
     },
     {
-        href: '',
-        name: 'typescript'
+        href: "",
+        name: "typescript"
     },
     {
-        href: '',
-        name: 'storybook'
+        href: "",
+        name: "storybook"
     },
     {
-        href: '',
-        name: 'jest'
+        href: "",
+        name: "jest"
     }
 ];
 
