@@ -1,34 +1,31 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import Link from "./Link";
+import Link from "./../Link";
 
 const styles = require('./App.css');
 
 const mapStateToProps = state => ({
-    helloMessage: state.helloMessage
+    helloMessage: state.helloMessage,
+    usedTechnologies: state.usedTechnologies
 });
 
-const App = ({helloMessage}: {helloMessage: string}) => (
+export const App = ({
+    helloMessage, 
+    usedTechnologies
+}: {
+    helloMessage: string, 
+    usedTechnologies: {href: string, name: string}[]
+}) => (
     <div className={styles.App}>
         <h1>{helloMessage}</h1>
         <ul>
-            <li>
-                <Link href={''} text={'react'}/>
-            </li>
-            <li>
-                <Link href={''} text={'redux'}/>
-            </li>
-            <li>
-                <Link href={''} text={'typescript'}/>
-            </li>
-            <li>
-                <Link href={''} text={'storybook'}/>
-            </li>
-            <li>
-                <Link href={''} text={'jest'}/>
-            </li>
+            {usedTechnologies.map(x => (
+                <li>
+                    <Link href={x.href}>{x.name}</Link>
+                </li>
+            ))}
         </ul>
     </div>
 );
 
-export default connect(mapStateToProps)(App);
+export const ConnectedApp = connect(mapStateToProps)(App);

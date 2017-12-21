@@ -3,4 +3,4 @@ import { storiesOf } from '@storybook/react'
 import Link from './';
 
 storiesOf('Link', module)
-  .add('Link', () => <Link href={''} text={'Sample text'} />)
+  .add('Link', () => <Link href={''}>Sample text</Link>)

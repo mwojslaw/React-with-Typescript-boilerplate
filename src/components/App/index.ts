@@ -1,1 +1,1 @@
-export {default} from './App';
+export {App, ConnectedApp} from './App';

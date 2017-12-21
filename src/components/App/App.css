@@ -10,3 +10,9 @@
     align-items: center;
     color:#0D152B;
 }
+
+.App ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

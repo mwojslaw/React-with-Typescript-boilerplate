@@ -1,6 +1,6 @@
 const autoprefixer = require("autoprefixer")
 
-module.exports = function(storybookConfig, configType) {
+module.exports = function(storybookConfig) {
   storybookConfig.module.rules = [
     ...storybookConfig.module.rules,
     { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
