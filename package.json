@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack",
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server",
+    "build": "npm run clean && npm install && webpack",
+    "watch": "npm run build && webpack --watch",
+    "start": "npm run build && webpack-dev-server",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest"
