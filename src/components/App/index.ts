@@ -1,1 +1,0 @@
-export {App, ConnectedApp} from './App';

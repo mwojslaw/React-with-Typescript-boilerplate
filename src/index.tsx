@@ -1,18 +1,25 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import {createStore, combineReducers} from "redux";
-import {Provider} from "react-redux";
+import { createStore } from "redux";
+import rootReducer from "./ducks";
+import { Provider } from "react-redux";
 
 import "normalize.css";
-import "./index.css";
-import {ConnectedApp} from "./components/App";
-import * as reducers from "./reducers";
+import { injectGlobal } from "styled-components";
+import { App } from "./containers";
 
-let store = createStore(combineReducers(reducers));
+let store = createStore(rootReducer);
+
+injectGlobal`
+    html, body, #root {
+        height: 100%;
+        width: 100%;
+    }
+`;
 
 ReactDOM.render(
     <Provider store={store}>
-        <ConnectedApp/>
+        <App />
     </Provider>,
-    document.getElementById("root")
+    document.getElementById("root"),
 );
